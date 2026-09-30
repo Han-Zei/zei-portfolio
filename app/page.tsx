@@ -14,9 +14,9 @@ export default function Home() {
             <div className="neo-box bg-neo-yellow text-black px-4 py-2 font-bold transform -rotate-2">
               Data Analyst | Vibe Coder | CS Graduate
             </div>
-            <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tight mt-6">
-              Hello, I'm <br className="md:hidden" />
-              <span className="inline-flex flex-wrap gap-3 mt-4 xl:mt-0 xl:ml-3">
+            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-black leading-tight tracking-tight mt-6">
+              Hello, I'm <br className="lg:hidden" />
+              <span className="inline-flex flex-wrap gap-2 lg:gap-3 mt-4 lg:mt-0 lg:ml-3">
                 <span className="neo-box bg-neo-cyan text-black px-4 py-1 transform -rotate-3 hover:rotate-3 transition-transform cursor-pointer">Czar</span>
                 <span className="neo-box bg-neo-pink text-black px-4 py-1 transform rotate-2 hover:-rotate-2 transition-transform cursor-pointer">Erson</span>
                 <span className="neo-box bg-neo-yellow text-black px-4 py-1 transform -rotate-2 hover:rotate-2 transition-transform cursor-pointer">S.</span>
