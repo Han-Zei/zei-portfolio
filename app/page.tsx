@@ -8,19 +8,19 @@ export default function Home() {
     <main className="flex-1 flex flex-col font-sans pt-16 lg:pt-0">
       
       {/* Hero Section */}
-      <section className="pt-20 pb-20 px-6 lg:px-12 flex items-center justify-center">
-        <div className="max-w-6xl w-full flex flex-col-reverse lg:flex-row gap-16 items-center lg:items-center justify-between">
+      <section className="pt-8 lg:pt-12 pb-20 px-6 lg:px-12 flex items-center justify-center">
+        <div className="max-w-7xl w-full flex flex-col-reverse lg:flex-row gap-8 lg:gap-12 items-center lg:items-center justify-between">
           <div className="flex-1 flex flex-col gap-6 items-start">
             <div className="neo-box bg-neo-yellow text-black px-4 py-2 font-bold transform -rotate-2">
               Data Analyst | Vibe Coder | CS Graduate
             </div>
-            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-black leading-tight tracking-tight mt-6">
+            <h1 className="text-4xl md:text-5xl xl:text-6xl font-black leading-tight tracking-tight mt-4 w-full">
               Hello, I'm <br className="lg:hidden" />
-              <span className="inline-flex flex-wrap gap-2 lg:gap-3 mt-4 lg:mt-0 lg:ml-3">
-                <span className="neo-box bg-neo-cyan text-black px-4 py-1 transform -rotate-3 hover:rotate-3 transition-transform cursor-pointer">Czar</span>
-                <span className="neo-box bg-neo-pink text-black px-4 py-1 transform rotate-2 hover:-rotate-2 transition-transform cursor-pointer">Erson</span>
-                <span className="neo-box bg-neo-yellow text-black px-4 py-1 transform -rotate-2 hover:rotate-2 transition-transform cursor-pointer">S.</span>
-                <span className="neo-box bg-neo-green text-black px-4 py-1 transform rotate-3 hover:-rotate-3 transition-transform cursor-pointer">Isla</span>
+              <span className="inline-flex whitespace-nowrap gap-2 lg:gap-3 mt-4 lg:mt-0 lg:ml-3 items-center">
+                <span className="neo-box bg-neo-cyan text-black px-3 py-1 transform -rotate-3 hover:rotate-3 transition-transform cursor-pointer">Czar</span>
+                <span className="neo-box bg-neo-pink text-black px-3 py-1 transform rotate-2 hover:-rotate-2 transition-transform cursor-pointer">Erson</span>
+                <span className="neo-box bg-neo-yellow text-black px-3 py-1 transform -rotate-2 hover:rotate-2 transition-transform cursor-pointer">S.</span>
+                <span className="neo-box bg-neo-green text-black px-3 py-1 transform rotate-3 hover:-rotate-3 transition-transform cursor-pointer">Isla</span>
               </span>
             </h1>
             <p className="text-xl font-medium border-l-[4px] border-neo-border pl-4">
