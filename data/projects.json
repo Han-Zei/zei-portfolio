@@ -1,0 +1,38 @@
+[
+  {
+    "id": "confidential",
+    "title": "█████████ Gov Systems",
+    "description": "██████ constitutional data ████ funds ███ dashboards. Highly classified AppScript architecture for the Commission on Higher Education. If I told you more, I'd have to ████████.",
+    "tags": ["AppScript", "Confidential", "Data Architecture", "Dashboards"],
+    "link": "#",
+    "github": "#",
+    "color": "bg-red-500"
+  },
+  {
+    "id": "1",
+    "title": "Accident Prone Area Prediction",
+    "description": "A heavy-duty machine learning model designed to predict where accidents are most likely to happen. Because dodging accidents is better than reporting them. Trained on massive historical datasets.",
+    "tags": ["Machine Learning", "Python", "Data Mining", "Predictive Modeling"],
+    "link": "#",
+    "github": "https://github.com/Han-Zei",
+    "color": "bg-neo-yellow"
+  },
+  {
+    "id": "2",
+    "title": "Four Golden Signals Dashboard",
+    "description": "A high-stakes observability dashboard built during my Amdocs internship. Monitors latency, traffic, errors, and saturation. Essential for making sure the servers don't melt while everyone is asleep.",
+    "tags": ["Grafana", "PostgreSQL", "Observability", "SQL"],
+    "link": "#",
+    "github": "https://github.com/Han-Zei",
+    "color": "bg-neo-cyan"
+  },
+  {
+    "id": "3",
+    "title": "QR-Based Attendance System",
+    "description": "Why write your name on a piece of paper when you can just scan a QR code? Built a fully functional, lightning-fast attendance tracker for seamless data collection and logging.",
+    "tags": ["Web Dev", "PHP", "MySQL", "QR API"],
+    "link": "#",
+    "github": "https://github.com/Han-Zei",
+    "color": "bg-neo-pink"
+  }
+]

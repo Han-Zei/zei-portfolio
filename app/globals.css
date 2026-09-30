@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4f4f0; /* Classic Neobrutalist Pale Yellow */
+  --foreground: #000000;
+  
+  --neo-cyan: #4df0ff;
+  --neo-pink: #ff4dff;
+  --neo-purple: #a44dff;
+  --neo-yellow: #ffde59;
+  --neo-green: #4dff4d;
+
+  --neo-border: #000000;
+  --neo-shadow: #000000;
+}
+
+.dark {
+  --background: #121212;
+  --foreground: #ffffff;
+  
+  --neo-cyan: #00ffff;
+  --neo-pink: #ff00ff;
+  --neo-purple: #b04dff;
+  --neo-yellow: #ffea00;
+  --neo-green: #00ff00;
+
+  --neo-border: var(--neo-cyan); /* Neon borders */
+  --neo-shadow: var(--neo-pink); /* Neon shadows */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-space-grotesk), sans-serif;
+  
+  --color-neo-cyan: var(--neo-cyan);
+  --color-neo-pink: var(--neo-pink);
+  --color-neo-purple: var(--neo-purple);
+  --color-neo-yellow: var(--neo-yellow);
+  --color-neo-green: var(--neo-green);
+  --color-neo-border: var(--neo-border);
+  
+  /* Hard drop shadows */
+  --shadow-neo: 4px 4px 0px 0px var(--neo-shadow);
+  --shadow-neo-lg: 8px 8px 0px 0px var(--neo-shadow);
+  --shadow-neo-hover: 2px 2px 0px 0px var(--neo-shadow);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-space-grotesk), sans-serif;
+  overflow-x: hidden;
+}
+
+@utility neo-box {
+  border: 3px solid var(--neo-border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-neo);
+  background-color: var(--background);
+}
+
+@utility neo-button {
+  border: 3px solid var(--neo-border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-neo);
+  font-weight: 700;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@utility neo-button-active {
+  &:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+  }
+}
+
+@utility neo-hover {
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    transform: translate(2px, 2px);
+    box-shadow: var(--shadow-neo-hover);
+  }
+}
+
+@keyframes neoWipe {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98) rotate(-1deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+.animate-page-enter {
+  animation: neoWipe 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
