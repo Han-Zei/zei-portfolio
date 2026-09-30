@@ -15,11 +15,20 @@ export default function Sidebar() {
 
   useEffect(() => {
     setMounted(true);
-    setVisitors(Math.floor(Math.random() * 5) + 1);
-    const interval = setInterval(() => {
-      setVisitors(Math.floor(Math.random() * 5) + 1);
-    }, 10000);
-    return () => clearInterval(interval);
+    
+    const fetchVisitors = async () => {
+      try {
+        const res = await fetch('/api/visitors');
+        const data = await res.json();
+        if (data.count !== undefined) {
+          setVisitors(data.count);
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    
+    fetchVisitors();
   }, []);
 
   const navLinks = [
@@ -94,8 +103,8 @@ export default function Sidebar() {
 
         <div className="p-6 border-t-[3px] border-neo-border flex flex-col gap-4">
           <div className="flex items-center gap-2 text-sm font-bold bg-neo-yellow text-black p-2 neo-box rounded">
-            <User className="w-4 h-4 animate-pulse" />
-            <span>{visitors} person{visitors !== 1 ? 's' : ''} viewing now</span>
+            <User className="w-4 h-4" />
+            <span>Total Visitors: {visitors}</span>
           </div>
 
           <div className="flex justify-between items-center">
