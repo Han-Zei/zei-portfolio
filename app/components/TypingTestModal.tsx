@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect, useRef } from "react";
 import { X, Keyboard, RotateCcw, Trophy } from "lucide-react";
@@ -215,8 +215,9 @@ export default function TypingTestModal() {
                   <h2 className="text-5xl font-black mb-2">{wpm} WPM</h2>
                   <p className="text-xl font-bold">
                     {wpm > 100 ? "Are you a cyborg? 🤖" : 
-                     wpm > 70 ? "Fast enough to dodge bugs! 🐛" : 
-                     "Not bad, but ChatGPT types faster. 💻"}
+                     wpm > 70 ? "Fast enough to dodge bugs! 🥷" : 
+                     wpm >= 30 ? "Not bad, but ChatGPT types faster. 🐢" :
+                     "You suck! HAHA 🤣"}
                   </p>
                   <button 
                     onClick={(e) => { e.stopPropagation(); resetGame(); }}
@@ -234,3 +235,4 @@ export default function TypingTestModal() {
     </div>
   );
 }
+
