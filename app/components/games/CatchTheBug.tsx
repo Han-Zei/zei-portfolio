@@ -62,7 +62,7 @@ export default function CatchTheBug() {
     <div className="neo-box bg-background border-[4px] border-black p-6 flex flex-col items-center h-[500px] relative overflow-hidden">
       
       {/* Header */}
-      <div className="w-full flex justify-between items-center mb-4 z-10 bg-white dark:bg-[#111] p-3 border-2 border-black">
+      <div className="w-full flex justify-between items-center mb-4 z-10 bg-background text-foreground p-3 border-2 border-black">
         <h3 className="text-xl font-black flex items-center gap-2">
           <Bug className="w-6 h-6 text-neo-pink" /> Catch The Bug
         </h3>
@@ -76,9 +76,9 @@ export default function CatchTheBug() {
       <div className="w-full flex-1 relative bg-black/5 border-[3px] border-dashed border-black/20 cursor-crosshair">
         
         {!isPlaying && gameResult === null && (
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/90 dark:bg-black/90 z-20 backdrop-blur-sm text-center p-4">
-            <h4 className="text-2xl font-black mb-2">P0 Outage Detected</h4>
-            <p className="font-bold mb-6 text-center max-w-sm">Squash 5 bugs before the 10-second timer runs out. They are fast.</p>
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/90 z-20 backdrop-blur-sm text-center p-4">
+            <h4 className="text-2xl font-black mb-2 text-foreground">P0 Outage Detected</h4>
+            <p className="font-bold mb-6 text-center max-w-sm text-foreground">Squash 5 bugs before the 10-second timer runs out. They are fast.</p>
             <button 
               onClick={startGame}
               className="neo-button neo-button-active bg-neo-pink text-black px-6 py-3 font-black uppercase flex items-center gap-2"
@@ -89,18 +89,18 @@ export default function CatchTheBug() {
         )}
 
         {gameResult && (
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/90 dark:bg-black/90 z-20 backdrop-blur-sm p-4 text-center">
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/90 z-20 backdrop-blur-sm p-4 text-center">
             {gameResult === 'won' ? (
               <div className="text-neo-green animate-bounce">
                 <Trophy className="w-16 h-16 mx-auto mb-4" />
                 <h4 className="text-4xl font-black mb-2 uppercase">Bug Squashed!</h4>
-                <p className="font-bold text-xl opacity-80">Production is safe... for now.</p>
+                <p className="font-bold text-xl text-foreground">Production is safe... for now.</p>
               </div>
             ) : (
               <div className="text-neo-pink">
                 <Bug className="w-16 h-16 mx-auto mb-4 animate-pulse" />
                 <h4 className="text-4xl font-black mb-2 uppercase">Time's Up!</h4>
-                <p className="font-bold text-xl opacity-80">The bug has officially become a feature.</p>
+                <p className="font-bold text-xl text-foreground">The bug has officially become a feature.</p>
               </div>
             )}
             <button 

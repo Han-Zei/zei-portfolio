@@ -74,7 +74,7 @@ export default function MemoryMatch() {
     <div className="neo-box bg-background border-[4px] border-black p-6 flex flex-col items-center">
       
       {/* Header */}
-      <div className="w-full flex justify-between items-center mb-8 bg-white dark:bg-[#111] p-3 border-2 border-black">
+      <div className="w-full flex justify-between items-center mb-8 bg-background text-foreground p-3 border-2 border-black">
         <h3 className="text-xl font-black">Tech Stack Memory</h3>
         <div className="font-bold font-mono bg-neo-cyan px-2 border-2 border-black text-black">
           Moves: {moves}
