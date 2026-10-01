@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import projects from "../data/projects.json";
 import ProjectButton from "./components/ProjectButton";
+import DeployRoulette from "./components/DeployRoulette";
 
 export default function Home() {
   return (
@@ -151,7 +152,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
+      
+      <DeployRoulette />
     </main>
   );
 }
