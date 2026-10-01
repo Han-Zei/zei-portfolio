@@ -43,9 +43,9 @@ export default function DeployRoulette() {
 
           {status === 'deploying' && (
             <div className="w-full max-w-md bg-black p-4 text-left font-mono text-neo-green font-bold flex flex-col gap-2">
-              <span>> Running tests... SKIPPED</span>
-              <span>> Building... SUCCESS</span>
-              <span className="animate-pulse">> Pushing to production server...</span>
+              <span>&gt; Running tests... SKIPPED</span>
+              <span>&gt; Building... SUCCESS</span>
+              <span className="animate-pulse">&gt; Pushing to production server...</span>
             </div>
           )}
 
