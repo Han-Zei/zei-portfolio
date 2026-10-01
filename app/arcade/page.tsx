@@ -42,7 +42,7 @@ export default function ArcadePage() {
             <TerminalSquare className="w-10 h-10 text-neo-green" />
             <div>
               <h3 className="font-black text-xl">Hacker Terminal</h3>
-              <p className="font-bold">Press <kbd className="bg-black text-white px-2 py-1 rounded mx-1 font-mono">Cmd/Ctrl + K</kbd> anywhere.</p>
+              <p className="font-bold">Press <kbd className="bg-black text-white px-2 py-1 rounded mx-1 font-mono">Cmd/Ctrl + \</kbd> anywhere.</p>
             </div>
           </div>
         </div>

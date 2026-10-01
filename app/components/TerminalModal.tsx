@@ -16,10 +16,10 @@ export default function TerminalModal() {
   const inputRef = useRef<HTMLInputElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // Keyboard shortcut listener (Cmd+K)
+  // Keyboard shortcut listener (Cmd+\)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+      if ((e.metaKey || e.ctrlKey) && e.key === "\\") {
         e.preventDefault();
         setIsOpen((prev) => !prev);
       }
