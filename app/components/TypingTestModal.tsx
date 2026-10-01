@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect, useRef } from "react";
 import { X, Keyboard, RotateCcw, Trophy } from "lucide-react";
@@ -12,7 +12,21 @@ const PHRASES = [
   "Copying from StackOverflow is an essential developer skill. It's not plagiarizing, it's called code reuse.",
   "I will fix it later. This is the biggest lie in software engineering history.",
   "To understand recursion, one must first understand recursion.",
-  "Why do Java developers wear glasses? Because they don't C#."
+  "Why do Java developers wear glasses? Because they don't C#.",
+  "It compiles! Ship it.",
+  "Code never lies, comments sometimes do.",
+  "First, solve the problem. Then, write the code.",
+  "Programming is 10% writing code and 90% figuring out why it doesn't work.",
+  "Hardware is the part of the computer you can kick. Software is what you can only curse at.",
+  "If at first you don't succeed, call it version 1.0.",
+  "I'm not procrastinating. I'm waiting for my code to compile.",
+  "I would love to change the world, but they won't give me the source code.",
+  "The best thing about a boolean is even if you are wrong, you are only off by a bit.",
+  "Without requirements or design, programming is the art of adding bugs to an empty text file.",
+  "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.",
+  "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+  "Premature optimization is the root of all evil in programming.",
+  "Measuring programming progress by lines of code is like measuring airplane building progress by weight."
 ];
 
 const FAKE_LEADERBOARD = [
