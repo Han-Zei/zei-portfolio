@@ -28,7 +28,7 @@ export default function ArcadePage() {
       </section>
 
       {/* Secret Shortcuts Section */}
-      <section className="p-6 md:p-12 border-b-[4px] border-black bg-white">
+      <section className="p-6 md:p-12 border-b-[4px] border-black bg-white dark:bg-[#111]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-6">
           <div className="flex-1 neo-box bg-background border-[3px] border-black p-6 flex items-center gap-4 transform rotate-1 hover:rotate-0 transition-transform">
             <Keyboard className="w-10 h-10 text-neo-pink" />
