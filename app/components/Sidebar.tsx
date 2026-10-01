@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Briefcase, Code, GraduationCap, Mail, Moon, Sun, Monitor, Keyboard, TerminalSquare, User } from "lucide-react";
+import { Home, Briefcase, Code, GraduationCap, Mail, Moon, Sun, Monitor, Keyboard, TerminalSquare, User, Gamepad2 } from "lucide-react";
 
 export default function Sidebar() {
   const { theme, setTheme } = useTheme();
@@ -39,6 +39,7 @@ export default function Sidebar() {
     { name: "Experience", href: "/experience", icon: GraduationCap },
     { name: "Certifications", href: "/certifications", icon: Monitor },
     { name: "Resume", href: "/resume", icon: User },
+    { name: "Arcade", href: "/arcade", icon: Gamepad2 },
     { name: "Contact", href: "/contact", icon: Mail },
   ];
 
