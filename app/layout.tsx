@@ -5,6 +5,7 @@ import { ThemeProvider } from "./providers";
 import Sidebar from "./components/Sidebar";
 import ChatbotModal from "./components/ChatbotModal";
 import TypingTestModal from "./components/TypingTestModal";
+import GlobalCrashHandler from "./components/GlobalCrashHandler";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -31,6 +32,7 @@ export default function RootLayout({
           </div>
           <ChatbotModal />
           <TypingTestModal />
+          <GlobalCrashHandler />
         </ThemeProvider>
       </body>
     </html>
